@@ -8,6 +8,12 @@ function Leftoperand (int pattern, int leftoperand) {
       else {return operandtostring2[leftoperand-1]}
     }
 }
+function Rightoperand (int pattern, int rightoperand) {
+    this.rtostring = function() {
+      if(pattern === 2) {return operandtostring[righttoperand-1]}
+      else {return operandtostring2[rightoperand-1]}
+    }
+}
 
 describe("A suite", function() {
   it("contains spec with an expectation", function() {
