@@ -19,20 +19,29 @@ function Rightoperand (int pattern, int rightoperand) {
 }
 function Operator (int operator)
 {
-  this.otostring = function(){ }
+  this.otostring = function(){
+      if(operator === 1){
+        return '+' ;
+      }
+
+      if(operator === 2){
+        return '-' ;
+      }
+
+      if(operator === 3){
+        return '*' ;
+      }
+
+      if(operator === 4){
+        return '/' ;
+      }
+   }
 }
 function Captcha(int pattern ,int operator, int leftoperand ,int rightoperand) {
   var l = new Leftoperand(pattern,leftoperand);
-  var r = new Rightoperand(pattern,rightoperand)
-  var o = new
+  var r = new Rightoperand(pattern,rightoperand);
+  var o = new Operator(operator);
   this.generate = function(){
     return l.ltostring() + " " + o.otosting()+ " " + r.rtostring();
   }
 }
-
-
-describe("A suite", function() {
-  it("contains spec with an expectation", function() {
-    expect(true).toBe(true);
-  });
-});
