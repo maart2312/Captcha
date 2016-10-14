@@ -106,3 +106,10 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,3,1,0).generate()).toEqual('1 * Zero');
       })
 });
+
+//Pattern2*
+describe("CaptchaApp", function() {
+      it('should generate "Four * 2" when CreteCaptcha(2,3,4,2)', function() {
+        expect(new CreateCaptcha(2,3,4,2).generate()).toEqual('Four * 2');
+      })
+});
