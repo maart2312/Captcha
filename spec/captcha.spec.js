@@ -39,3 +39,8 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(2,2,9,6)).toEqual('9 - Six');
       })
 });
+describe("CaptchaApp", function() {
+      it('should generate "One + 1" when CreteCaptcha(1,1,1,1)', function() {
+        expect(new CreateCaptcha(1,1,1,1)).toEqual('One + 1');
+      })
+});
