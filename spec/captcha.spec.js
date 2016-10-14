@@ -41,7 +41,12 @@ describe("CaptchaApp", function() {
       })
 });
 
-//Pattern1+
+//Pattern1-
+describe("CaptchaApp", function() {
+      it('should generate "5 - Four" when CreteCaptcha(1,2,5,4)', function() {
+        expect(new CreateCaptcha(1,2,5,4).generate()).toEqual('5 - Four');
+      })
+});
 
 
 
