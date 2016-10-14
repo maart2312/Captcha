@@ -48,6 +48,13 @@ describe("CaptchaApp", function() {
       })
 });
 
+describe("CaptchaApp", function() {
+      it('should generate "4 - Two" when CreteCaptcha(1,2,4,2)', function() {
+        expect(new CreateCaptcha(1,2,4,2).generate()).toEqual('4 - Two');
+      })
+});
+
+
 
 
 
