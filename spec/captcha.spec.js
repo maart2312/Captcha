@@ -47,6 +47,12 @@ describe("CaptchaApp", function() {
       })
 });
 
+describe("CaptchaApp", function() {
+      it('should generate "2 + One" when CreteCaptcha(1,1,2,1)', function() {
+        expect(new CreateCaptcha(1,1,2,1).generate()).toEqual('2 + One');
+      })
+});
+
 //Pattern1-
 describe("CaptchaApp", function() {
       it('should generate "5 - Four" when CreteCaptcha(1,2,5,4)', function() {
@@ -59,12 +65,6 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,2,4,2).generate()).toEqual('4 - Two');
       })
 });
-
-
-
-
-
-
 
 //Pattern2+
 describe("CaptchaApp", function() {
