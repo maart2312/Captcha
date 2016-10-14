@@ -9,7 +9,7 @@ function Leftoperand (pattern, leftoperand) {
 }
 function Rightoperand (pattern,rightoperand) {
   this.rtostring = function() {
-    if(pattern === 2) {return operandtostring[righttoperand]}
+    if(pattern === 2) {return operandtostring[righttoperand];}
     else {return operandtostring2[rightoperand];}
   }
 }
@@ -29,4 +29,7 @@ function Captcha(pattern ,operator,leftoperand,rightoperand) {
   this.generate = function(){
     return l.ltostring() + o.otostring() + r.rtostring();
   }
+}
+function CreateCaptcha(pattern ,operator,leftoperand,rightoperand) {
+    return new Captcha(pattern ,operator,leftoperand,rightoperand);
 }
