@@ -44,3 +44,8 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,1,1,1)).toEqual('One + 1');
       })
 });
+describe("CaptchaApp", function() {
+      it('should generate "8 - Seven" when CreteCaptcha(2,2,8,7)', function() {
+        expect(new CreateCaptcha(2,2,8,7)).toEqual('8 - Seven');
+      })
+});
