@@ -130,3 +130,10 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,4,9,0).generate()).toEqual('9 / Zero');
       })
 });
+
+//Pattern2/
+describe("CaptchaApp", function() {
+      it('should generate "Six / 3" when CreteCaptcha(2,4,6,3)', function() {
+        expect(new CreateCaptcha(2,4,6,3).generate()).toEqual('Six / 3');
+      })
+});
