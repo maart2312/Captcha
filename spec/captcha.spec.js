@@ -101,3 +101,8 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,3,5,6).generate()).toEqual('5 * Six');
       })
 });
+describe("CaptchaApp", function() {
+      it('should generate "1 * Zero" when CreteCaptcha(1,3,1,0)', function() {
+        expect(new CreateCaptcha(1,3,1,0).generate()).toEqual('1 * Zero');
+      })
+});
