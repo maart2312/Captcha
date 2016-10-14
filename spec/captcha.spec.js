@@ -125,3 +125,8 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(1,4,2,1).generate()).toEqual('2 / One');
       })
 });
+describe("CaptchaApp", function() {
+      it('should generate "9 / Zero" when CreteCaptcha(1,4,9,0)', function() {
+        expect(new CreateCaptcha(1,4,9,0).generate()).toEqual('9 / Zero');
+      })
+});
