@@ -118,3 +118,10 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(2,3,9,7).generate()).toEqual('Nine * 7');
       })
 });
+
+//Pattern1/
+describe("CaptchaApp", function() {
+      it('should generate "2 / One" when CreteCaptcha(1,4,2,1)', function() {
+        expect(new CreateCaptcha(1,4,2,1).generate()).toEqual('2 / One');
+      })
+});
