@@ -94,3 +94,10 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(2,2,8,7).generate()).toEqual('Eight - 7');
       })
 });
+
+//Pattern1*
+describe("CaptchaApp", function() {
+      it('should generate "5 * Six" when CreteCaptcha(1,3,5,6)', function() {
+        expect(new CreateCaptcha(1,3,5,6).generate()).toEqual('5 * Six');
+      })
+});
