@@ -1,11 +1,25 @@
 {
   "name": "mok",
   "version": "1.0.0",
-  "description": "",
+  "description": "กลุ่ม Psyduck <br />   57160243  ศุภวิชญ์ อุตรา <br />   57160325  ณภัทร วรรณชัย",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maart2312/Captcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maart2312/Captcha/issues"
+  },
+  "homepage": "https://github.com/maart2312/Captcha#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  },
+  "dependencies": {
+    "jasmine": "^2.5.2"
+  }
 }
