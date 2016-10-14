@@ -33,3 +33,9 @@ function Captcha(pattern ,operator,leftoperand,rightoperand) {
 function CreateCaptcha(pattern ,operator,leftoperand,rightoperand) {
     return new Captcha(pattern ,operator,leftoperand,rightoperand);
 }
+
+describe("CaptchaApp", function() {
+      it('should generate "9 - Six" when CreteCaptcha(2,2,9,6)', function() {
+        expect(new CreateCaptcha(2,2,9,6)).toEqual('9 - Six');
+      })
+});
