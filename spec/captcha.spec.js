@@ -137,3 +137,8 @@ describe("CaptchaApp", function() {
         expect(new CreateCaptcha(2,4,6,3).generate()).toEqual('Six / 3');
       })
 });
+describe("CaptchaApp", function() {
+      it('should generate "Eight / 5" when CreteCaptcha(2,4,8,5)', function() {
+        expect(new CreateCaptcha(2,4,8,5).generate()).toEqual('Eight / 5');
+      })
+});
