@@ -9,7 +9,7 @@ function Leftoperand (pattern, leftoperand) {
 }
 function Rightoperand (pattern,rightoperand) {
   this.rtostring = function() {
-    if(pattern === 2) {return operandtostring[righttoperand];}
+    if(pattern === 2) {return operandtostring[rightoperand];}
     else {return operandtostring2[rightoperand];}
   }
 }
@@ -36,21 +36,21 @@ function CreateCaptcha(pattern ,operator,leftoperand,rightoperand) {
 
 describe("CaptchaApp", function() {
       it('should generate "9 - Six" when CreteCaptcha(2,2,9,6)', function() {
-        expect(new CreateCaptcha(2,2,9,6)).toEqual('9 - Six');
+        expect(new CreateCaptcha(2,2,9,6).generate()).toEqual('9 - Six');
       })
 });
 describe("CaptchaApp", function() {
       it('should generate "One + 1" when CreteCaptcha(1,1,1,1)', function() {
-        expect(new CreateCaptcha(1,1,1,1)).toEqual('One + 1');
+        expect(new CreateCaptcha(1,1,1,1).generate()).toEqual('One + 1');
       })
 });
 describe("CaptchaApp", function() {
       it('should generate "8 - Seven" when CreteCaptcha(2,2,8,7)', function() {
-        expect(new CreateCaptcha(2,2,8,7)).toEqual('8 - Seven');
+        expect(new CreateCaptcha(2,2,8,7).generate()).toEqual('8 - Seven');
       })
 });
 describe("CaptchaApp", function() {
       it('should generate "7 + Four" when CreteCaptcha(2,1,7,4)', function() {
-        expect(new CreateCaptcha(2,1,7,4)).toEqual('7 + Four');
+        expect(new CreateCaptcha(2,1,7,4).generate()).toEqual('7 + Four');
       })
 });
